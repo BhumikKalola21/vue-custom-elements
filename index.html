@@ -9,9 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        --bc-font-display: "Madimi One", sans-serif;
+        --bc-font-base: "Quicksand", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="app">
+      <bc-blog-posts></bc-blog-posts>
+    </div>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (e) => {
+        window.BCElements.init('.app');
+      })
+    </script>
   </body>
 </html>

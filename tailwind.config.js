@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Madimi One", 'sans-serif', ...defaultTheme.fontFamily.sans],
-        sans: ["Quicksand", 'sans-serif', ...defaultTheme.fontFamily.sans]
+        display: "var(--bc-font-display)",
+        sans: "var(--bc-font-base)"
       }
     },
   },
